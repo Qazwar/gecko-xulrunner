@@ -28,7 +28,6 @@
 @RESPATH@/chrome/@AB_CD@.manifest
 @RESPATH@/@PREF_DIR@/b2g-l10n.js
 @RESPATH@/searchplugins/*
-@RESPATH@/defaults/profile/bookmarks.html
 #ifdef MOZ_UPDATER
 @RESPATH@/update.locale
 @RESPATH@/updater.ini
@@ -628,10 +627,6 @@
 #endif
 @RESPATH@/components/servicesComponents.manifest
 @RESPATH@/components/cryptoComponents.manifest
-#ifdef MOZ_SERVICES_HEALTHREPORT
-@RESPATH@/components/HealthReportComponents.manifest
-@RESPATH@/components/HealthReportService.js
-#endif
 @RESPATH@/components/CaptivePortalDetectComponents.manifest
 @RESPATH@/components/captivedetect.js
 @RESPATH@/components/TelemetryStartup.js

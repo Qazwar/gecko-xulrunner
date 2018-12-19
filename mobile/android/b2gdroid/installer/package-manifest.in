@@ -19,7 +19,6 @@
 @BINPATH@/chrome/@AB_CD@.manifest
 @BINPATH@/@PREF_DIR@/mobile-l10n.js
 @BINPATH@/searchplugins/*
-@BINPATH@/defaults/profile/bookmarks.html
 #ifdef MOZ_UPDATER
 @BINPATH@/update.locale
 @BINPATH@/updater.ini
@@ -427,11 +426,6 @@
 #ifdef MOZ_WEBRTC
 @BINPATH@/components/PeerConnection.js
 @BINPATH@/components/PeerConnection.manifest
-#endif
-
-#ifdef MOZ_SERVICES_HEALTHREPORT
-@BINPATH@/components/HealthReportComponents.manifest
-@BINPATH@/components/HealthReportService.js
 #endif
 
 @BINPATH@/components/CaptivePortalDetectComponents.manifest

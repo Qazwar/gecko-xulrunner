@@ -30,6 +30,7 @@
 #include "mozilla/ToString.h"
 #include "nsHTMLReflowMetrics.h"
 #include "ImageContainer.h"
+#include "gfx2DGlue.h"
 
 #include <limits>
 #include <algorithm>
@@ -2659,6 +2660,12 @@ public:
    * enabled.
    */
   static bool AsyncPanZoomEnabled(nsIFrame* aFrame);
+
+  /**
+   * Returns the current APZ Resolution Scale. When Java Pan/Zoom is
+   * enabled in Fennec it will always return 1.0.
+   */
+  static float GetCurrentAPZResolutionScale(nsIPresShell* aShell);
 
   /**
    * Log a key/value pair for APZ testing during a paint.
